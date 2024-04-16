@@ -18,11 +18,13 @@ body {
     font-weight: 400;  
     font-size: 14px;
     color: var(--neutral-0);
+    background-color: var(--neutral-black);
+    padding : 40px  auto;
    
 }
 
 .home-screen{
-    background-color: var(--neutral-black);
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,45 +34,70 @@ body {
 }
 .social-card{
     background-color: var(--neutral-900);
+    min-width: 240px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     justify-content: center;
     align-items: center;
+    border-radius: 16px;
+    margin-bottom: 60px;
 }
 
 .title{
-    font-size: 32px;
+    font-size: 24px;
     color: var(--neutral-0);
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .tagline{
-    font-size: 24px;
+    font-size: 16px;
     color: var(--accent-color);
 
 }
 
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
 .avatar-img{
-    width: 176px;
-    height: 176px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     object-position: top;
     border-radius: 100%;
 }
 
-.social-link{
+  .social-link {
     display: flex;
-    padding: 40px auto;
+    color:var(--neutral-0);
     width: 100%;
+    font-weight: 700;
     background-color: var(--neutral-700);
-    border-radius: 16px;
+    border-radius:8px;
     justify-content: center;
+    align-items: center;
+    border:none; 
+    padding: 40px auto;
+    min-height: 46px;
+
+    transition: ease-in-out 300ms;
 }
+
+
 
 .social-link:hover{
     background-color: var(--accent-color);
-    color: var(--neutral-700)
+    color: var(--neutral-700);
+    cursor: pointer;
 
+}
+
+.social-card a:hover, .social-card a{
+    text-decoration: none;
 }
