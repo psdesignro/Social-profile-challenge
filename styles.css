@@ -29,10 +29,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+   min-height: 100vh;
 
 }
 .social-card{
+    margin-top: 40px;
     background-color: var(--neutral-900);
     min-width: 240px;
     padding: 40px;
@@ -100,4 +101,8 @@ body {
 
 .social-card a:hover, .social-card a{
     text-decoration: none;
+}
+
+.attribution{
+    margin-bottom: 40px;
 }
